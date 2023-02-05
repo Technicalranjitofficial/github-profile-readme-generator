@@ -297,7 +297,7 @@ export default function Home() {
   
       <div className=" min-h-screen relative overflow-hidden bg-slate-900  ">
         <div className="max-w-screen-2xl overflow-hidden pb-2   max-h-screen gap-5  mx-auto p-2 md:p-0 grid grid-cols-1  md:grid-cols-2">
-          <div className="w-full max-h-screen p-5 border-2 border-slate-800   overflow-y-auto overflow-x-hidden">
+          <div className="w-full max-h-screen p-3 md:p-5 border-2 border-slate-800   overflow-y-auto overflow-x-hidden">
             <DevCard />
             <br />
             {Gen ? (
@@ -448,7 +448,8 @@ export default function Home() {
                     </div>
 
                     <div>
-                      <span className="text-slate-300 font-bold font-Alegreya text-xl">
+                      <br />
+                      <span className="text-slate-300 font-bold font-Alegreya text-md md:text-xl">
                         Addons
                       </span>
                       <AddOns onCheckAddons={onCheckAddons} addOns={addOns} />

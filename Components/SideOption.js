@@ -9,7 +9,7 @@ const SideOption = ({ display, onDisplay, events, template,onDataUpdate ,trophyD
   const dflex = " md:w-96";
   return (
     <div
-      className={`max-h-screen p-2   bg-slate-900 h-screen z-50 absolute overflow-y-auto  right-0 border-2 border-dotted border-teal-400   top-0   duration-900 ease-linear  ${
+      className={`max-h-screen p-2   bg-slate-900 h-screen z-50 absolute overflow-y-auto  right-0 md:border-2 border-dotted border-teal-400   top-0   duration-900 ease-linear  ${
         display ? dflex : dnone
       } `}
     >
