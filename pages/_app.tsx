@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
   facebook={{
     image:"./homepage.png",
     type:"website",
-    url:""
+    url:"https://github.com/Technicalranjitofficial/github-profile-readme-generator"
   }}
 
   />

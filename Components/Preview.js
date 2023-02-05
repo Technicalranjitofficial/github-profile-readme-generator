@@ -26,12 +26,12 @@ const Preview = ({
   TopLangStatsData
 }) => {
   const ab = "h1";
-console.log(StatsData['locale'].locale);
+
   return (
     <div className="md:p-5 p-2 bg-slate-900  border-r-2 border-b-2 border-slate-800  relative text-slate-400">
-      <div className="absolute right-9 top-4 md:top-9">
+      <div className="absolute md:right-9 right-3 top-3 md:top-9">
         <select
-          className="py-2  px-4 bg-transparent border-2 border-orange-200 text-slate-300 rounded-md font-bold text-sm md:text-xl"
+          className="md:py-2 py-1   px-2 md:px-4 bg-transparent border-2 border-orange-200 text-slate-300 rounded-md font-bold text-sm md:text-xl"
           value={theme}
           onChange={(e) => onThemeChange(e)}
         >
@@ -126,7 +126,7 @@ console.log(StatsData['locale'].locale);
       <div className="flex gap-3 flex-wrap flex-row ml-3 mt-2">
         {skills.map((val, index) => {
           if (skill[val]) {
-            // console.log(])
+            
             return <ShowSkills key={index} img={icons[val]} />;
           }
         })}
@@ -137,7 +137,7 @@ console.log(StatsData['locale'].locale);
       <div className="flex gap-3 flex-wrap flex-row ml-3 mt-2">
         {socialName.map((val, index) => {
           if (socialConnect[val].length > 0) {
-            // console.log(])
+           
             return <ShowSocialConnect key={index} img={socialIcons[val]} />;
           }
         })}
@@ -235,7 +235,7 @@ const ShowMemes = ({ memes }) => {
   }
 };
 const ShowGitStats = ({ gitstats, username, themes, onDisplay,locale,hide_border, }) => {
-  console.log(themes,locale,hide_border)
+  
   if (gitstats && username.length>0) {
     return (
       <button onClick={()=>onDisplay('gitstats')}>

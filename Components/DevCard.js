@@ -3,7 +3,7 @@ import React, { useLayoutEffect, useState } from "react";
 import { StarIcon, RepoForkedIcon } from "@primer/octicons-react";
 import gsap from "gsap";
 const DevCard = () => {
-  const [forksCount, setForksCount] = useState("-0");
+  const [forksCount, setForksCount] = useState("");
 
   const getData = async () => {
    
@@ -38,13 +38,13 @@ const DevCard = () => {
     <div className="w-full flex rounded-lg flex-col relative items-center justify-center animate-pulse border-dotted border-2  border-cyan-500 h-52 bg-slate-900">
       <span className="absolute top-5 text-md md:text-xl text-sm font-Alegreya font-bold text-slate-300">Github Profile Readme Generator</span>
       <div className="flex flex-row gap-6">
-        <a href="">
+        <a href="https://github.com/Technicalranjitofficial/github-profile-readme-generator">
         <div className="flex items-center font-Alegreya text-slate-400 border-2 border-slate-500 rounded-md border-dotted py-2 px-1 md:px-4 gap-2 flex-col md:flex-row ">
           <StarIcon className="star" />
-          <p className="text-xs md:text-sm">Star this repo {182}</p>
+          <p className="text-xs md:text-sm">Star this repo</p>
         </div>
         </a>
-        <a href="">
+        <a href="https://github.com/Technicalranjitofficial/github-profile-readme-generator">
         <div className="flex flex-col md:flex-row text-slate-400 gap-2 font-Alegreya  border-2 border-slate-500  rounded-md border-dotted py-2 px-1 md:px-4 justify-between items-center">
           <RepoForkedIcon className="fork justify-between" />
           <p className="text-xs md:text-sm">Fork this repo {forksCount}</p>

@@ -9,11 +9,11 @@ const SideOption = ({ display, onDisplay, events, template,onDataUpdate ,trophyD
   const dflex = " md:w-96";
   return (
     <div
-      className={`max-h-screen p-2   bg-slate-900 h-screen z-50 absolute overflow-y-auto  right-0 border-2 border-dotted border-teal-400   top-0   duration-200 ease-linear  ${
+      className={`max-h-screen p-2   bg-slate-900 h-screen z-50 absolute overflow-y-auto  right-0 border-2 border-dotted border-teal-400   top-0   duration-900 ease-linear  ${
         display ? dflex : dnone
       } `}
     >
-      <span onClick={closeSide}  className="absolute top-5 cursor-pointer left-5 text-red-600 font-bold font-Alegreya text-xl">
+      <span onClick={closeSide}  className="absolute md:top-5 top-6 cursor-pointer right-7 md:left-5 text-red-600 font-bold font-Alegreya text-xl">
 
         <AiOutlineCloseSquare className="text-red-600 w-9 h-9"/>
       </span>
@@ -57,11 +57,11 @@ const TrophySec = ({trophyData,template,onDataUpdate})=>{
   <br />
   <br />
   <div className=" flex flex-col ">
-    <div className="flex flex-row gap-3">
+    <div className="flex flex-row ml-3 gap-3">
       <input className="w-5 " type="checkbox" value={trophyData['no_frames']} checked={trophyData['no_frames']} onChange={(e)=>onDataUpdate('no_frames',!trophyData['no_frames'])} />
       <p className="text-slate-400  font-semibold " >Hide Frames</p>
     </div>
-    <div className="flex flex-row gap-3">
+    <div className="flex ml-3 flex-row gap-3">
       <input className="w-5 " checked={trophyData['background_transparent']} onChange={(e)=>onDataUpdate("background_transparent",!trophyData['background_transparent'])} type="checkbox" />
       <p className="text-slate-400  font-semibold " >Background Transparent</p>
     
@@ -109,13 +109,13 @@ const TrophySec = ({trophyData,template,onDataUpdate})=>{
 
 
 const StreakSec = ({StreaksData,template,onDataUpdate,streakLoc})=>{
-  return <div className="w=full">
+  return <div className="w-full">
   <div className="flex flex-row justify-center pt-5">
   <span className="text-center text-slate-300 font-bold font-Alegreya ">Stats Section</span>
   </div>
   <br />
   <br />
-  <div className=" flex flex-col ">
+  <div className=" ml-3 flex flex-col ">
     <div className="flex flex-row gap-3">
       <input className="w-5 " type="checkbox" value={StreaksData['hide_border']} checked={StreaksData['hide_border']} onChange={(e)=>onDataUpdate('hide_border',!StreaksData['hide_border'])} />
       <p className="text-slate-400  font-semibold " >Hide Border</p>
@@ -172,7 +172,7 @@ const GitStats = ({StatsData,template,onDataUpdate,StatsLoc})=>{
   </div>
   <br />
   <br />
-  <div className=" flex flex-col ">
+  <div className=" ml-3 flex flex-col ">
     <div className="flex flex-row gap-3">
       <input className="w-5 " type="checkbox" value={StatsData['hide_border']} checked={StatsData['hide_border']} onChange={(e)=>onDataUpdate('hide_border',!StatsData['hide_border'])} />
       <p className="text-slate-400  font-semibold " >Hide Border</p>
@@ -217,13 +217,13 @@ const GitStats = ({StatsData,template,onDataUpdate,StatsLoc})=>{
 }
 
 const TopLanguage = ({TopLangStatsData,template,onDataUpdate})=>{
-  return <div className="w=full">
+  return <div className="w-full">
   <div className="flex flex-row justify-center pt-5">
   <span className="text-center text-slate-300 font-bold font-Alegreya ">Stats Section</span>
   </div>
   <br />
   <br />
-  <div className=" flex flex-col ">
+  <div className=" flex ml-3 flex-col ">
     <div className="flex flex-row gap-3">
       <input className="w-5 " type="checkbox" value={TopLangStatsData['hide_border']} checked={TopLangStatsData['hide_border']} onChange={(e)=>onDataUpdate('hide_border',!TopLangStatsData['hide_border'])} />
       <p className="text-slate-400  font-semibold " >Hide Border</p>

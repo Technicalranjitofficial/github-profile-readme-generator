@@ -41,6 +41,7 @@ import { BiCopy } from "react-icons/bi";
 import { SlCloudDownload } from "react-icons/sl";
 import { MdArrowBackIos, MdOutlineArrowBackIos } from "react-icons/md";
 import { FiCheck } from "react-icons/fi";
+import { VscLoading } from "react-icons/vsc";
 
 import {FaRegEdit} from "react-icons/fa"
 
@@ -304,13 +305,13 @@ export default function Home() {
             ) : (
               <div className="">
                 <div className="w-full md:hidden justify-center h-20 flex flex-col relative">
-                  <div className="border-2 rounded-md h-16 border-slate-800"></div>
-                  <div className="absolute  h-16 w-40 justify-between flex rounded-lg flex-row gap-0 bg-slate-800 right-0">
+                  <div className="border-2 rounded-md md:h-16 h-12 border-slate-800"></div>
+                  <div className="absolute  h-12 md:h-16 w-40 justify-between flex rounded-lg flex-row gap-0 bg-slate-800 right-0">
                     <button
                       onClick={() => setViewMode(false)}
                       className={` ${
                         viewMode ? "bg-slate-800" : "bg-slate-700"
-                      } duration-300 ease-linear py-2 w-full text-slate-400  px-3`}
+                      } duration-300 ease-linear text-xs hover:bg-slate-800 md:text-sm py-2 w-full text-slate-400  px-3`}
                     >
                       Edit
                     </button>
@@ -318,7 +319,7 @@ export default function Home() {
                       onClick={() => setViewMode(true)}
                       className={` ${
                         viewMode ? "bg-slate-700" : "bg-slate-800"
-                      } duration-200 ease-linear w-full py-2 rounded-tr-md rounded-br-md  text-slate-400  px-3`}
+                      } duration-200 text-xs md:text-sm hover:bg-slate-800 ease-linear w-full py-2 rounded-tr-md rounded-br-md  text-slate-400  px-3`}
                     >
                       View
                     </button>
@@ -464,13 +465,15 @@ export default function Home() {
 
               // </button>
               <div className="w-full flex justify-center items-center h-20">
-                <Image
+                {/* <Image
                   className="animate-spin"
                   src="/loading.png"
                   alt="loading.."
                   width={40}
                   height={40}
-                />
+                /> */}
+                <VscLoading className="text-white animate-spin" size={40} 
+                  height={40}/>
               </div>
             ) : !onGenerating && !Gen ? (
               <div className="w-full justify-center flex-col flex">
@@ -611,7 +614,7 @@ export default function Home() {
                   <br />
                   <div className="flex flex-col md:flex-row  md:items-center md:justify-center gap-2">
                    <span className="font-bold text-md text-xl text-green-600"> Contribute: </span> 
-                   <p>Create pull request and Don&apos;t forget to <a className="text-blue-500 no-underline  font-bold" href="">Fork</a> and <a className="text-blue-500 no-underline font-bold" href="">Star</a> this repo.</p>
+                   <p>Create pull request and Don&apos;t forget to <a className="text-blue-500 no-underline  font-bold" href="https://github.com/Technicalranjitofficial/github-profile-readme-generator">Fork</a> and <a className="text-blue-500 no-underline font-bold" href="https://github.com/Technicalranjitofficial/github-profile-readme-generator">Star</a> this repo.</p>
                   </div>
                 </div>
               </div>
