@@ -6,7 +6,7 @@ import {AiOutlineCloseSquare} from "react-icons/ai"
 const SideOption = ({ display, onDisplay, events, template,onDataUpdate ,trophyData,closeSide,StreaksData,StatsData,StatsLoc,streakLoc,TopLangStatsData}) => {
 
   const dnone = "w-0 hidden ";
-  const dflex = " w-96";
+  const dflex = " md:w-96";
   return (
     <div
       className={`max-h-screen p-2   bg-slate-900 h-screen z-50 absolute overflow-y-auto  right-0 border-2 border-dotted border-teal-400   top-0   duration-200 ease-linear  ${
@@ -50,7 +50,7 @@ export default SideOption;
 
 
 const TrophySec = ({trophyData,template,onDataUpdate})=>{
-  return <div className="w=full">
+  return <div className="w-full">
   <div className="flex flex-row justify-center pt-5">
   <span className="text-center text-slate-300 font-bold font-Alegreya ">Trophy Section</span>
   </div>
@@ -73,7 +73,7 @@ const TrophySec = ({trophyData,template,onDataUpdate})=>{
       <br />
       <div className="flex justify-around flex-row gap-3">
       {template.data.column.map((val,index)=>{
-        return <span key={index} onClick={()=>onDataUpdate("column",val)} className={`${trophyData['column']===val?"bg-teal-600":"bg-pink-500"} text-slate-200 font-bold font-Alegreya w-full rounded-lg flex justify-center items-center  h-20`}><span>
+        return <span key={index} onClick={()=>onDataUpdate("column",val)} className={`${trophyData['column']===val?"bg-teal-600":"bg-pink-500"} text-slate-200 font-bold font-Alegreya w-full rounded-lg flex justify-center items-center h-10 md:h-20`}><span>
           {val}</span></span>
       })}
       </div>
