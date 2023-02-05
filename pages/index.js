@@ -111,7 +111,7 @@ export default function Home() {
 
   //   }, timeout);
   // },[socialData.github])
-  console.log("tda", trophyData);
+
 
 
 
@@ -216,12 +216,8 @@ export default function Home() {
     }, 3000);
   };
 
-  if (socialData) {
-    console.log(socialData);
-  }
-  if (GenData) {
-    console.log(GenData, addOns);
-  }
+
+  
 
   const onSetSoical = (field, event) => {
     if (field === "github" && event.target.value.length <= 0) {
@@ -242,10 +238,6 @@ export default function Home() {
     newAddons[fields] = !newAddons[fields];
     setAddOns(newAddons);
   };
-
-  if (addOns) {
-    console.log(addOns);
-  }
 
   const onThemeChange = (event) => {
     setTheme(event.target.value);
@@ -269,7 +261,7 @@ export default function Home() {
     }
   };
 
-  console.log(display);
+
 
   const onDataUpdate = (field, val, ind) => {
     if (events === "trophy") {
@@ -415,7 +407,7 @@ export default function Home() {
                           </span>
                           <div className="grid grid-cols-2 my-5 md:grid-cols-6 gap-2">
                             {categorizedSkills[val].skills.map((val, ind) => {
-                              // console.log(icons[val]);
+                              
                               return (
                                 <SkillsCard
                                   skill={val}
@@ -568,7 +560,7 @@ export default function Home() {
                   <p className="text-slate-400 ml-3 text-sm mt-2 font-bold font-Alegreya">
                     Paste the code in the{" "}
                     <span className="text-pink-400 font-bold">readme.md</span>{" "}
-                    file and that's it, you can see the result
+                    file and that&apos;s it, you can see the result
                   </p>
                   <div className="w-full rounded-md justify-center flex flex-wrap">
                     <br />
@@ -604,7 +596,7 @@ export default function Home() {
                     <br />
                     <span>
                       <span className="text-green-600 ml-3 text-xl font-bold font-Alegreya">
-                        Congrat's
+                        Congrat&apos;s
                       </span>{" "}
                       You have Successfully Created your Github Readme Profile..
                     </span>
@@ -619,7 +611,7 @@ export default function Home() {
                   <br />
                   <div className="flex flex-col md:flex-row  md:items-center md:justify-center gap-2">
                    <span className="font-bold text-md text-xl text-green-600"> Contribute: </span> 
-                   <p>Create pull request and Don't forget to <a className="text-blue-500 no-underline  font-bold" href="">Fork</a> and <a className="text-blue-500 no-underline font-bold" href="">Star</a> this repo.</p>
+                   <p>Create pull request and Don&apos;t forget to <a className="text-blue-500 no-underline  font-bold" href="">Fork</a> and <a className="text-blue-500 no-underline font-bold" href="">Star</a> this repo.</p>
                   </div>
                 </div>
               </div>
