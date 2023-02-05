@@ -271,7 +271,7 @@ export default function Home() {
 
   console.log(display);
 
-  const onThemeUpdate = (field, val, ind) => {
+  const onDataUpdate = (field, val, ind) => {
     if (events === "trophy") {
       const newT = { ...trophyData };
       newT[field] = val;
@@ -381,7 +381,7 @@ export default function Home() {
                       })}
                       <button
                         onClick={handleOnAddMore}
-                        className="text-slate-300 bg-teal-900 py-2 px-3 mt-3 w-full font-Alegreya font-semibold hover:bg-teal-800 "
+                        className="text-slate-400 bg-teal-900 py-2 px-3 mt-3 w-full font-Alegreya font-semibold hover:bg-teal-800 "
                       >
                         Add more
                       </button>
@@ -658,7 +658,7 @@ export default function Home() {
           StreaksData={StreaksData && events === "streakstats" && StreaksData}
           closeSide={closeSide}
           trophyData={trophyData && events === "trophy" && trophyData}
-          onDataUpdate={onThemeUpdate}
+          onDataUpdate={onDataUpdate}
           template={Template}
           events={events}
           display={display}

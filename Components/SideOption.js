@@ -4,17 +4,6 @@ import React, { useState } from "react";
 import {AiOutlineCloseSquare} from "react-icons/ai"
 
 const SideOption = ({ display, onDisplay, events, template,onDataUpdate ,trophyData,closeSide,StreaksData,StatsData,StatsLoc,streakLoc,TopLangStatsData}) => {
-  if (template) {
-    console.log(template);
-    
-
-  }
-
-  console.log("nod",StatsData['locale']);
-
-  // no_framee:false,
-  //   column:[1,2,3,4],
-  //   background_transparent:false,
 
   const dnone = "w-0 hidden ";
   const dflex = " w-96";

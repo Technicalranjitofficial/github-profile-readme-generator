@@ -1,17 +1,12 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useLayoutEffect, useState } from "react";
 import { StarIcon, RepoForkedIcon } from "@primer/octicons-react";
 import gsap from "gsap";
 const DevCard = () => {
   const [forksCount, setForksCount] = useState("-0");
 
-  const shouldRequestStats = () => {
-    const isVisible = window.document.visibilityState === "visible";
-    const hasFocus = window.document.hasFocus();
-    return isVisible && hasFocus;
-  };
   const getData = async () => {
-    if (shouldRequestStats()) {
+   
       axios
         .get(
           "https://api.github.com/repos/Technicalranjitofficial/nothing/forks"
@@ -22,11 +17,12 @@ const DevCard = () => {
         .catch((err) => {
           console.log(err);
         });
-    }
+        console.log("called");
+    
   };
 
-  useState(async () => {
-    await getData();
+  useLayoutEffect(()=>{
+    getData();
     setInterval(getData, 60000);
     gsap.set(".star, .fork", {
       transformOrigin: "center",
@@ -38,7 +34,7 @@ const DevCard = () => {
       repeat: -1,
       yoyo: true,
     });
-  }, []);
+  },[])
   return (
     <div className="w-full flex rounded-lg flex-col relative items-center justify-center animate-pulse border-dotted border-2  border-cyan-500 h-52 bg-slate-900">
       <span className="absolute top-4 text-md md:text-xl font-Alegreya font-bold text-slate-300">Best Github Profile Readme Generator</span>
