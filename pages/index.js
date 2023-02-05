@@ -296,7 +296,7 @@ export default function Home() {
   
       <div className=" min-h-screen relative overflow-hidden bg-slate-900  ">
         <div className="max-w-screen-2xl overflow-hidden pb-2   max-h-screen gap-5  mx-auto p-2 md:p-0 grid grid-cols-1  md:grid-cols-2">
-          <div className="w-full max-h-screen p-5 border-2 border-slate-600   overflow-y-auto overflow-x-hidden">
+          <div className="w-full max-h-screen p-5 border-2 border-slate-800   overflow-y-auto overflow-x-hidden">
             <DevCard />
             <br />
             {Gen ? (
@@ -424,13 +424,13 @@ export default function Home() {
                     })}
 
                     <div className=" mt-5">
-                      <span className="text-slate-300 font-bold font-Alegreya text-xl">
+                      <span className="text-slate-300 md:text-xl font-bold font-Alegreya text-sm">
                         Social Connections{" "}
                         <span className="text-red-400 animate-pulse">
                           [Github username is requird]
                         </span>
                       </span>
-                      <div className="grid grid-cols-2 border-2 border-slate-800 p-2 drop-shadow-lg rounded-md bg-slate-900 gap-2 mt-5">
+                      <div className="grid grid-cols-1 md:grid-cols-2 border-2 border-slate-800 p-2 drop-shadow-lg rounded-md bg-slate-900 gap-2 mt-5">
                         {socialName.map((val, index) => {
                           return (
                             <SocialInfo

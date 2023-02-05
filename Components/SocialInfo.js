@@ -10,7 +10,7 @@ const SocialInfo = ({value,onSetSoical,icons,placeholder,setMsg}) => {
        
        <Image width={50}   height={50} className={`rounded-full ${placeholder==="github"?"bg-red-500":"bg-slate-400"}`}  src={icons} alt="social" />
        }
-        <input value={value}  onChange={(e)=>onSetSoical(`${placeholder}`,e)} type="text" className={`w-full bg-slate-800 outline-none  font-semibold ${placeholder==="github" &&"animate-pulse"} text-slate-300 placeholder:text-slate-500 placeholder:text-sm placeholder:font-OpenSans placeholder:${placeholder==="github"?"animate-pulse":"animate-none"} placeholder:${placeholder==="github"?"text-red-500":" text-slate-300"}`} placeholder={`${placeholder.charAt(0).toUpperCase()}${placeholder.slice(1)} username`} />
+        <input value={value}  onChange={(e)=>onSetSoical(`${placeholder}`,e)} type="text" className={`w-full bg-slate-900 outline-none   font-semibold ${placeholder==="github" &&"animate-pulse"} text-slate-300 placeholder:text-slate-500 placeholder:text-sm placeholder:font-OpenSans placeholder:${placeholder==="github"?"animate-pulse":"animate-none"} placeholder:${placeholder==="github"?"text-red-500":" text-slate-300"}`} placeholder={`${placeholder.charAt(0).toUpperCase()}${placeholder.slice(1)} username`} />
     </div>
   )
 }

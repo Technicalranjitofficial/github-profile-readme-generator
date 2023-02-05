@@ -17,8 +17,7 @@ const DevCard = () => {
         .catch((err) => {
           console.log(err);
         });
-        console.log("called");
-    
+     
   };
 
   useLayoutEffect(()=>{
@@ -37,16 +36,16 @@ const DevCard = () => {
   },[])
   return (
     <div className="w-full flex rounded-lg flex-col relative items-center justify-center animate-pulse border-dotted border-2  border-cyan-500 h-52 bg-slate-900">
-      <span className="absolute top-4 text-md md:text-xl font-Alegreya font-bold text-slate-300">Best Github Profile Readme Generator</span>
+      <span className="absolute top-5 text-md md:text-xl text-sm font-Alegreya font-bold text-slate-300">Github Profile Readme Generator</span>
       <div className="flex flex-row gap-6">
         <a href="">
-        <div className="flex items-center font-Alegreya text-slate-400 border-2 border-slate-500 rounded-md border-dotted py-2 px-4 gap-2 flex-col md:flex-row ">
+        <div className="flex items-center font-Alegreya text-slate-400 border-2 border-slate-500 rounded-md border-dotted py-2 px-1 md:px-4 gap-2 flex-col md:flex-row ">
           <StarIcon className="star" />
           <p className="text-xs md:text-sm">Star this repo {182}</p>
         </div>
         </a>
         <a href="">
-        <div className="flex flex-col md:flex-row text-slate-400 gap-2 font-Alegreya  border-2 border-slate-500  rounded-md border-dotted py-2 px-4 justify-between items-center">
+        <div className="flex flex-col md:flex-row text-slate-400 gap-2 font-Alegreya  border-2 border-slate-500  rounded-md border-dotted py-2 px-1 md:px-4 justify-between items-center">
           <RepoForkedIcon className="fork justify-between" />
           <p className="text-xs md:text-sm">Fork this repo {forksCount}</p>
         </div>

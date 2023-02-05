@@ -14,7 +14,7 @@ const AddOns = ({addOns,onCheckAddons}) => {
       </div> 
       <div onClick={()=>onCheckAddons('trophy')} className="w-full border-2 border-slate-800 flex flex-row gap-3 py-3 hover:bg-slate-700 cursor-pointer">
         <input onChange={(e)=>onCheckAddons('trophy')} type="checkbox" checked={addOns.trophy} className="w-20 h-auto accent-green-600 " name="" id="" />
-        <span className="font-Alegreya text-sm">Display Trophy <span className="text-green-500 font-bold">[Customizable]</span></span>
+        <span className="font-Alegreya text-sm">Display Trophy  </span>
       </div>
       {/* <div onClick={()=>onCheckAddons('topSkills')} className="w-full border-2 border-slate-800 flex flex-row gap-3 py-3 hover:bg-slate-700 cursor-pointer">
         <input onChange={(e)=>onCheckAddons('topSkills')} type="checkbox" checked={addOns.topSkills} className="w-20 h-auto accent-green-600 " name="" id="" />
@@ -22,7 +22,7 @@ const AddOns = ({addOns,onCheckAddons}) => {
       </div> */}
       <div onClick={()=>onCheckAddons('githubProfileStats')} className="w-full border-2 border-slate-800 flex flex-row gap-3 py-3 hover:bg-slate-700 cursor-pointer">
         <input onChange={(e)=>onCheckAddons('githubProfileStats')} type="checkbox" checked={addOns.githubProfileStats} className="w-20 h-auto accent-green-600 " name="" id="" />
-        <span className="font-Alegreya text-sm">Display Profile Stats <span className="text-green-500 font-bold">[Customizable]</span></span>
+        <span className="font-Alegreya text-sm">Display Profile Stats  </span>
       </div>
       <div onClick={()=>onCheckAddons('showMemes')} className="w-full border-2 border-slate-800 flex flex-row gap-3 py-3 hover:bg-slate-700 cursor-pointer">
         <input onChange={(e)=>onCheckAddons('showMemes')} type="checkbox" checked={addOns.showMemes} className="w-20 h-auto accent-green-600 " name="" id="" />
@@ -30,11 +30,11 @@ const AddOns = ({addOns,onCheckAddons}) => {
       </div>
       <div onClick={()=>onCheckAddons('showStreakStats')} className="w-full border-2 border-slate-800 flex flex-row gap-3 py-3 hover:bg-slate-700 cursor-pointer">
         <input onChange={(e)=>onCheckAddons('showStreakStats')} type="checkbox" checked={addOns.showStreakStats} className="w-20 h-auto accent-green-600 " name="" id="" />
-        <span className="font-Alegreya text-sm">Show Streak Stats <span className="text-green-500 font-bold">[Customizable]</span></span>
+        <span className="font-Alegreya text-sm">Show Streak Stats</span>
       </div> 
       <div onClick={()=>onCheckAddons('showMostLanguageUsed')} className="w-full border-2 border-slate-800 flex flex-row gap-3 py-3 hover:bg-slate-700 cursor-pointer">
         <input onChange={(e)=>onCheckAddons('showMostLanguageUsed')} type="checkbox" checked={addOns.showMostLanguageUsed} className="w-20 h-auto accent-green-600 " name="" id="" />
-        <span className="font-Alegreya text-sm">Show Top Language <span className="text-green-500 font-bold">[Customizable]</span></span>
+        <span className="font-Alegreya text-sm">Show Top Language  </span>
       </div>
      
     </div>
