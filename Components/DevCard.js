@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useLayoutEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import { StarIcon, RepoForkedIcon } from "@primer/octicons-react";
 import gsap from "gsap";
 import { devSocial, devSocialTitle } from "@/helper/static";
@@ -7,34 +7,38 @@ import Image from "next/image";
 const DevCard = () => {
   const [forksCount, setForksCount] = useState("");
 
-  const getData = async () => {
+  // const getData = async () => {
    
-      axios
-        .get(
-          "https://api.github.com/repos/Technicalranjitofficial/nothing/forks"
-        )
-        .then((res) => {
-          setForksCount(res.data[0].forks_count);
-        })
-        .catch((err) => {
-          console.log(err);
-        });
+  //     axios
+  //       .get(
+  //         "https://api.github.com/repos/Technicalranjitofficial/nothing/forks"
+  //       )
+  //       .then((res) => {
+  //         setForksCount(res.data[0].forks_count);
+  //       })
+  //       .catch((err) => {
+  //         console.log(err);
+  //       });
      
-  };
+  // };
 
-  useLayoutEffect(()=>{
-    getData();
-    setInterval(getData, 60000);
-    gsap.set(".star, .fork", {
-      transformOrigin: "center",
-    });
-    gsap.to(".star, .fork", {
-      rotateZ: "360",
-      duration: 2,
-      ease: "elastic.inOut",
-      repeat: -1,
-      yoyo: true,
-    });
+  useEffect(()=>{
+    // getData();
+    // setInterval(getData, 60000);
+
+      console.log("clicked")
+      gsap.set(".star, .fork", {
+        transformOrigin: "center",
+      });
+      gsap.to(".star, .fork", {
+        rotateZ: "360",
+        duration: 2,
+        ease: "elastic.inOut",
+        repeat: -1,
+        yoyo: true,
+      });
+   
+  
   },[])
   return (
     <div className="w-full flex rounded-lg flex-col relative items-center justify-center animate-pulse border-dotted border-2  border-cyan-500 h-52 bg-slate-900">
