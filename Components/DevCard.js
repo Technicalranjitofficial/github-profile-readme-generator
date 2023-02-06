@@ -2,6 +2,8 @@ import axios from "axios";
 import React, { useLayoutEffect, useState } from "react";
 import { StarIcon, RepoForkedIcon } from "@primer/octicons-react";
 import gsap from "gsap";
+import { devSocial, devSocialTitle } from "@/helper/static";
+import Image from "next/image";
 const DevCard = () => {
   const [forksCount, setForksCount] = useState("");
 
@@ -51,8 +53,10 @@ const DevCard = () => {
         </div>
         </a>
       </div>
-      <div className="absolute bottom-5 text-xs md:text-md font-bold font-Alegreya text-green-500">
-        ** Don't forget to fork and star this Repo **
+      <div className="absolute bottom-5 flex gap-2 flex-row text-xs md:text-md font-bold font-Alegreya text-green-500">
+        {devSocialTitle.map((val,index)=>{
+          return <a key={index} href={devSocial[val].url}><Image  className={`border-2 border-slate-600 rounded-lg hover:border-slate-500 hover:translate-y-1`} src={devSocial[val].img} alt="" width={40} height={40}/></a>
+        })}
       </div>
     </div>
   );

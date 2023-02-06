@@ -4,7 +4,7 @@ import type { AppProps } from 'next/app'
 
 export default function App({ Component, pageProps }: AppProps) {
   return <>
-   <SEO title="Github Profile Readme Generator" description="A tool for github profile readme generator"
+   <SEO title="Github Profile Readme Generator" description="Prettify your github profile using this amazing readme generator."
     keywords={['generator','github','readme-generator','github readme generator','github-profile','github-readme']} icon="/github.ico" twitter={{
       image: "/homepage.png",
       site: "@technicalranjit",

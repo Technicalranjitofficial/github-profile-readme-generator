@@ -745,7 +745,7 @@ export const socialUrl = {
 
 export const initialAddon = {
   visitorBadge: true,
-  twiterBadge: true,
+  twiterBadge: false,
   trophy: true,
   githubProfileStats: true,
   showMemes: true,
@@ -1124,3 +1124,21 @@ export const initialTemplateData = {
     data: ConstTopLanguageStats,
   },
 };
+
+
+export const devSocialTitle=['instagram','linkedin','github'];
+
+export const devSocial ={
+  instagram:{
+    url:"https://www.instagram.com/official_ranjitdas",
+    img:"https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/instagram.svg",
+  },
+  linkedin:{
+    url:"https://www.linkedin.com/in/technicalranjit",
+    img:"https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/linkedin.svg",
+  },
+  github:{
+    url:"https://github.com/Technicalranjitofficial",
+    img:"https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/png/github.png",
+  }
+}

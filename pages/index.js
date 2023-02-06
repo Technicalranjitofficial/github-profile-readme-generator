@@ -67,7 +67,7 @@ export default function Home() {
   const [socialData, setSocialData] = useState(socialConst);
   const [title, setTitle] = useState("Ranjit Das 🤠");
   const [subTitle, setSubTitle] = useState(
-    "💖 A Passionate Coder,Developer & Debugger"
+    "💖 A Passionate Coder,Developer and Debugger"
   );
   const [addOns, setAddOns] = useState(initialAddon);
   const [genClick, setGenClick] = useState(false);
@@ -234,7 +234,17 @@ export default function Home() {
     setSocialData(newData);
   };
 
+  
   const onCheckAddons = (fields) => {
+    console.log(fields);
+    if(fields==="twiterBadge" && socialData['twitter'].length<=0){
+     
+      setMsg({message:"Enter your twitter username above in social fields!",success:false});
+     return setTimeout(() => {
+        setMsg({message:"",success:null});
+      }, 2000);
+     
+    }
     const newAddons = { ...addOns };
     newAddons[fields] = !newAddons[fields];
     setAddOns(newAddons);
@@ -358,9 +368,9 @@ export default function Home() {
                       setTitle={setSubTitle}
                     />
                     <div className="mt-3">
-                      <span className="text-cyan-500 text-xl font-bold font-Alegreya">
+                      <h1 className="text-cyan-500 text-xl font-bold font-Alegreya">
                         Projects
-                      </span>
+                      </h1>
                       {works.map((val, index) => {
                         return (
                           <Works
@@ -380,9 +390,9 @@ export default function Home() {
                       </button>
                     </div>
                     <div className="mt-5">
-                      <span className="text-cyan-500 text-lg font-bold font-Alegreya ">
+                      <h1 className="text-cyan-500 text-lg font-bold font-Alegreya ">
                         Additional Info
-                      </span>
+                      </h1>
                       <MoreInfo
                         val={moreInfo}
                         onChange={handleOnMoreInfoChnage}
@@ -390,9 +400,9 @@ export default function Home() {
                     </div>
 
                     <br />
-                    <span className="text-cyan-500 text-lg font-bold font-Alegreya ">
-                      Additional Info
-                    </span>
+                    <h1 className="text-cyan-500 text-lg font-bold font-Alegreya ">
+                      Skills/Language
+                    </h1>
                     <br />
                     <br />
 
@@ -425,12 +435,12 @@ export default function Home() {
                     })}
 
                     <div className=" mt-5">
-                      <span className="text-slate-300 md:text-xl font-bold font-Alegreya text-sm">
+                      <h1 className="text-slate-300 md:text-xl font-bold font-Alegreya text-sm">
                         Social Connections{" "}
                         <span className="text-red-400 animate-pulse">
                           [Github username is requird]
                         </span>
-                      </span>
+                      </h1>
                       <div className="grid grid-cols-1 md:grid-cols-2 border-2 border-slate-800 p-2 drop-shadow-lg rounded-md bg-slate-900 gap-2 mt-5">
                         {socialName.map((val, index) => {
                           return (
@@ -449,9 +459,9 @@ export default function Home() {
 
                     <div>
                       <br />
-                      <span className="text-slate-300 font-bold font-Alegreya text-md md:text-xl">
+                      <h1 className="text-slate-300 font-bold font-Alegreya text-md md:text-xl">
                         Addons
-                      </span>
+                      </h1>
                       <AddOns onCheckAddons={onCheckAddons} addOns={addOns} />
                     </div>
                   </div>
@@ -574,7 +584,7 @@ export default function Home() {
                       className="w-full object-cover mt-5 rounded-md md:px-4"
                       height={300}
                       src="https://user-images.githubusercontent.com/87274287/216817160-6f4829ed-f1b9-4c54-8cd2-df55506accb6.png"
-                      alt="img"
+                      alt="profile-radme-generator"
                     />
                     <br />
                   </div>
@@ -592,7 +602,7 @@ export default function Home() {
                       className="w-full   object-cover mt-5 rounded-md md:px-4"
                       height={300}
                       src="https://user-images.githubusercontent.com/87274287/216817182-450c3cf3-2b16-48ce-b1bd-30981132fa98.png"
-                      alt="img"
+                      alt="profile-radme-generator"
                     />
                   </div>
 
@@ -609,7 +619,7 @@ export default function Home() {
                       className="w-full   object-cover mt-5 rounded-md md:px-4"
                       height={300}
                       src="https://user-images.githubusercontent.com/87274287/216818040-956e0b41-1d95-4df2-a784-a5d8c157bc88.png"
-                      alt="img"
+                      alt="profile-radme-generator"
                     />
                   </div>
                   <br />

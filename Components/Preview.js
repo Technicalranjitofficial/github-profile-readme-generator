@@ -57,7 +57,7 @@ const Preview = ({
             " ",
             "+"
           )}&duration=3500&size=30`}
-          alt=""
+          alt="profile-radme-generator"
         />
       )}
       <br />
@@ -71,7 +71,7 @@ const Preview = ({
       </div>
    <br />
       <div>
-        <ShowTwiterBadge username="technicalranjit" twitterBadge={addons['twiterBadge']} />
+        <ShowTwiterBadge username={socialConnect['twitter']} twitterBadge={addons['twiterBadge']} />
       </div>
       <br />
       <div>
@@ -215,11 +215,11 @@ const ShowAdditionalInfo = ({ prefix, title }) => {
 };
 
 const ShowSocialConnect = ({ img }) => {
-  return <img width={50} height={50} src={img} alt="img" />;
+  return <img width={50} height={50} src={img} alt="profile-radme-generator" />;
 };
 
 const ShowSkills = ({ img }) => {
-  return <img width={50} height={50} src={img} alt="img" />;
+  return <img width={50} height={50} src={img} alt="profile-radme-generator" />;
 };
 
 const ShowMemes = ({ memes }) => {
@@ -229,7 +229,7 @@ const ShowMemes = ({ memes }) => {
         height="auto"
         width={500}
         src="https://readme-jokes.vercel.app/api?bgColor=%23073b4c&textColor=%2306d6a0&aColor=%2306d6a0&borderColor=%2306d6a0"
-        alt=""
+        alt="profile-radme-generator"
       />
     );
   }
@@ -244,7 +244,7 @@ const ShowGitStats = ({ gitstats, username, themes, onDisplay,locale,hide_border
           height="auto"
           width={300}
           src={`https://github-readme-stats.vercel.app/api?username=${username}&show_icons=true&theme=${themes}&hide_border=${hide_border}&locale=${locale}`}
-          alt=""
+          alt="profile-radme-generator"
         />
       </button>
     );
@@ -259,7 +259,7 @@ const ShowStreakStats = ({ showStreakStats, username,onDisplay,theme,mode,hide_b
         height="auto"
         width={300}
         src={`https://github-readme-streak-stats.herokuapp.com/?user=${username}&theme=${theme}&mode=${mode}&hide_border=${hide_border}&locale=${locale.locale}`}
-        alt=""
+        alt="profile-radme-generator"
       />
       </button>
     );
@@ -273,7 +273,7 @@ const ShowMostLanguageUsed = ({ showMostLanguageUsed, username,onDisplay,theme,h
         height="auto"
         width={300}
         src={`https://github-readme-stats.vercel.app/api/top-langs/?username=${username}&theme=${theme}&hide_border=${hide_border}`}
-        alt=""
+        alt="profile-radme-generator"
       />
       </button>
     );
@@ -285,7 +285,7 @@ const ShowVisitorBadge = ({ visitorBadge, username }) => {
       <img
         height="auto"
         src={`https://komarev.com/ghpvc/?username=${username}&label=Profile%20views&color=0e75b6&style=flat`}
-        alt=""
+        alt="profile-radme-generator"
       />
     );
   }

@@ -19,9 +19,7 @@ const Generate = ({
   TopLangStatsData,
   theme,
 }) => {
-  if (data) {
-    console.log("data", data);
-  }
+
 
   const [copy, setCopy] = useState(false);
   const handleCopyToClipboard = () => {
@@ -98,6 +96,7 @@ const Generate = ({
         {data.addons["trophy"] && (
           <>
             <GenerateTrophy
+          
               column={trophyData["column"]}
               noframe={trophyData["no_frames"]}
               theme={trophyData["theme"]}
@@ -153,6 +152,7 @@ const Generate = ({
 
         <>
           <GenerateGitStats
+          githubProfileStats={data.addons['githubProfileStats']}
             hide_border={StatsData["hide_border"]}
             locale={StatsData["locale"].locale}
             themes={StatsData["theme"]}
@@ -163,6 +163,7 @@ const Generate = ({
         </>
         <>
           <GenerateStreaks
+        
             StreaksData={StreaksData}
             showStreakStats={data.addons["showStreakStats"]}
             hide_border={StreaksData["hide_border"]}
@@ -176,6 +177,7 @@ const Generate = ({
         </>
         <>
           <TopLanguageUsed
+          showMostLanguageUsed={data.addons['showMostLanguageUsed']}
             hide_border={TopLangStatsData["hide_border"]}
             theme={TopLangStatsData["theme"]}
             username={data.socialConnection["github"]}
@@ -236,7 +238,7 @@ const GenerateSocialConnect = ({ socialConnect }) => {
   socialName.map((val) => {
     if (socialConnect[val].length > 0) {
       social.push(`
-            <a href="${socialUrl[val]}${socialConnect[val]}" target="blank"><img align="center" src=${socialIcons[val]} alt="technicalranjit" height="30" width="40" /></a>
+            <a href="${socialUrl[val]}${socialConnect[val]}" target="blank"><img align="center" src=${socialIcons[val]} alt="profile-radme-generator" height="30" width="40" /></a>
             `);
     }
   });
@@ -286,62 +288,74 @@ const GenerateVisitorCount = ({ username, visitorBadge }) => {
         <br />
 
         {` 
-        <img height="auto" src="https://komarev.com/ghpvc/?username=${username}&label=Profile%20views&color=0e75b6&style=flat" alt="technicalranjit" />
+        <img height="auto" src="https://komarev.com/ghpvc/?username=${username}&label=Profile%20views&color=0e75b6&style=flat" alt="profile-radme-generator" />
         `}
       </>
     );
   }
 };
 
-const GenerateGitStats = ({ username, themes, locale, hide_border }) => {
-  return (
-    <>
-      <br />
-      <br />
-      {`
-    <img align="left" height="auto" width={300} src="https://github-readme-stats.vercel.app/api?username=${username}&show_icons=true&theme=${themes}&locale=${locale}&hide_border=${hide_border}" alt="" />
-    `}
-    </>
-  );
+const GenerateGitStats = ({githubProfileStats, username, themes, locale, hide_border }) => {
+  if(githubProfileStats && username.length>0){
+    return (
+      <>
+        <br />
+        <br />
+        {`
+      <img align="left" height="auto" width={300} src="https://github-readme-stats.vercel.app/api?username=${username}&show_icons=true&theme=${themes}&locale=${locale}&hide_border=${hide_border}" alt="profile-radme-generator" />
+      `}
+      </>
+    );
+  }
+  
 };
-const GenerateStreaks = ({ username, theme, mode, hide_border, locale }) => {
-  return (
-    <>
+const GenerateStreaks = ({showStreakStats, username, theme, mode, hide_border, locale }) => {
+  if(showStreakStats){
+
+    return (
+      <>
       <br />
       <br />
       {`
-    <img align="left" height="auto" width={300} src="https://github-readme-streak-stats.herokuapp.com/?user=${username}&theme=${theme}&mode=${mode}&hide_border=${hide_border}&locale=${locale.locale}" alt="" />
+    <img align="left" height="auto" width={300} src="https://github-readme-streak-stats.herokuapp.com/?user=${username}&theme=${theme}&mode=${mode}&hide_border=${hide_border}&locale=${locale.locale}" alt="profile-radme-generator" />
     `}
     </>
   );
+}
 };
 
-const TopLanguageUsed = ({ username, theme, hide_border }) => {
-  return (
-    <>
+const TopLanguageUsed = ({showMostLanguageUsed, username, theme, hide_border }) => {
+  if(showMostLanguageUsed){
+
+    return (
+      <>
       <br />
       <br />
       {`
-   <img align="left" height="auto" width={300} src="https://github-readme-stats.vercel.app/api/top-langs/?username=${username}&theme=${theme}&hide_border=${hide_border}" alt="technicalranjit" />
-
-    `}
+   <img align="left" height="auto" width={300} src="https://github-readme-stats.vercel.app/api/top-langs/?username=${username}&theme=${theme}&hide_border=${hide_border}" alt="profile-radme-generator" />
+   
+   `}
     </>
   );
+}
 };
 
 const GenerateMemes = () => {
-  return (
-    <>
+  if(showMemes){
+
+    return (
+      <>
       <br />
       <br />
       {`
    <p align="left">
    <img width="900" height="110" src="https://readme-jokes.vercel.app/api" alt ="tr"/>
    </p>
-
-    `}
+   
+   `}
     </>
   );
+}
 };
 
 export default Generate;
@@ -378,7 +392,7 @@ const GenerateTwiterBadge = ({ username, twitterBadge, themes }) => {
         <br />
         <br />
         {`
-<p align="left"> <a href="https://twitter.com/${username}" target="blank"><img src="https://img.shields.io/twitter/follow/${username}?logo=twitter&style=for-the-badge" alt="technicalranjit" /></a> </p>`}
+<p align="left"> <a href="https://twitter.com/${username}" target="blank"><img src="https://img.shields.io/twitter/follow/${username}?logo=twitter&style=for-the-badge" alt="profile-radme-generator" /></a> </p>`}
       </>
     );
   }

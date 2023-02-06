@@ -21,7 +21,7 @@ const Implementation = () => {
             className="w-full object-cover mt-5 rounded-md md:px-4"
             height={300}
             src="https://user-images.githubusercontent.com/87274287/216817137-325b3623-e838-4526-939f-824de97035fc.png"
-            alt="img"
+            alt="profile-radme-generator"
           />
         </div>
         <br />
@@ -33,7 +33,7 @@ const Implementation = () => {
             className="w-full object-cover mt-5 rounded-md md:px-4"
             height={300}
             src="https://user-images.githubusercontent.com/87274287/216817142-43654aaa-993f-407e-947c-bfb0c78da7cb.png"
-            alt="img"
+            alt="profile-radme-generator"
           />
         </div>
         <br />
@@ -45,7 +45,7 @@ const Implementation = () => {
             className="w-full object-cover mt-5 rounded-md md:px-4"
             height={300}
             src="https://user-images.githubusercontent.com/87274287/216817156-15f28207-a8c7-4832-9cb7-bc9c0072fabb.png"
-            alt="img"
+            alt="profile-radme-generator"
           />
 
         </div>
