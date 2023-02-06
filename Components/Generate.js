@@ -78,7 +78,7 @@ const Generate = ({
           </>
         )}
         <>
-          {data.addons["showMemes"] && <GenerateMemes />}
+          {data.addons["showMemes"] && <GenerateMemes showMemes={data.addons['showMemes']} />}
           <br />
           <br />
         </>
@@ -340,7 +340,7 @@ const TopLanguageUsed = ({showMostLanguageUsed, username, theme, hide_border }) 
 }
 };
 
-const GenerateMemes = () => {
+const GenerateMemes = ({showMemes}) => {
   if(showMemes){
 
     return (
