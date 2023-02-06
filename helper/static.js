@@ -680,42 +680,43 @@ export const socialName = [
 ];
 
 export const socialIcons = {
-  github: "https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg",
-  dev: "https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg",
+  github: "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg",
+  dev: "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg",
   linkedin:
-    "https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg",
-  codepen: "https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg",
+    "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg",
+  codepen: "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg",
   stackoverflow:
-    "https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg",
-  kaggle: "https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/kaggle.svg",
+    "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg",
+  kaggle: "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg",
   codesandbox:
-    "https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg",
-  fb: "https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg",
+    "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codesandbox.svg",
+  fb: "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg",
   instagram:
-    "https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg",
-  twitter: "https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg",
+    "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg",
+  twitter: "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg",
   dribbble:
-    "https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/dribbble.svg",
-  behance: "https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/behance.svg",
-  medium: "https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/medium.svg",
-  youtube: "https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/youtube.svg",
+    "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/dribbble.svg",
+  behance: "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/behance.svg",
+  medium: "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg",
+  youtube: "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg",
   codechef:
     "https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg",
   hackerrank:
-    "https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/hackerrank.svg",
+    "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg",
   codeforces:
-    "https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codeforces.svg",
+    "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codeforces.svg",
   leetcode:
-    "https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/leetcode.svg",
+    "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg",
   topcoder:
-    "https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/topcoder.svg",
+    "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/topcoder.svg",
   hackerearth:
-    "https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/hackerearth.svg",
+    "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerearth.svg",
   geeks_for_geeks:
-    "https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/geeksforgeeks.svg",
-  discord: "https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/discord.svg",
-  rssurl: "https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/rss.svg",
-};
+    "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/geeks-for-geeks.svg",
+  discord: "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg",
+  rssurl: "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/rss.svg",
+}
+
 
 export const socialUrl = {
   github: "https://github.com/",
