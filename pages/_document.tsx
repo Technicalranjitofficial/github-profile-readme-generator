@@ -7,7 +7,7 @@ export default function Document() {
       <Head>
         <Script
           strategy="lazyOnload"
-          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS}`}
+          src={`https://www.googletagmanager.com/gtag/js?id=G-0NRNKS9N4D`}
         />
 
         <Script id="ga-script" strategy="lazyOnload">
@@ -15,7 +15,7 @@ export default function Document() {
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', '${process.env.GOOGLE_ANALYTICS}', {
+    gtag('config', 'G-0NRNKS9N4D', {
       page_path: window.location.pathname,
     });
         `}

@@ -62,7 +62,7 @@ const Preview = ({
       )}
       <br />
       <ShowVisitorBadge
-        username="anuraghazra"
+        username={socialConnect['github']}
         visitorBadge={addons["visitorBadge"]}
       />
       <br />
