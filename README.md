@@ -1,9 +1,13 @@
+ ![Screenshot from 2023-02-06 21-26-57](https://user-images.githubusercontent.com/87274287/217350182-6e327778-e612-469a-9b0d-25aa48cd7664.png)
+
 <p align="center">
   <a href="https://rahuldkjain.github.io/gh-profile-readme-generator">
     <img alt="GitHub Profile Readme Generator" src="./src/images/mdg.png" width="60" />
   </a>
 </p>
 <h1 align="center">
+  
+
   GitHub Profile README Generator
 </h1>
 
@@ -22,6 +26,8 @@
 </a>
 <a href="https://github.com/rahuldkjain/github-profile-readme-generator/pulls" target="blank">
 <img src="https://img.shields.io/github/issues-pr/technicalranjitofficial/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator pull-requests"/>
+ 
+
 </a>
 
 </p>
