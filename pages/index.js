@@ -307,7 +307,7 @@ export default function Home() {
   
       <div className=" min-h-screen relative overflow-hidden bg-slate-900  ">
         <div className="max-w-screen-xl overflow-hidden pb-2   max-h-screen gap-5  mx-auto p-2 md:p-0 grid grid-cols-1  md:grid-cols-2">
-          <div className="w-full max-h-screen p-3 md:p-5 border-2 border-slate-800   overflow-y-auto overflow-x-hidden">
+          <div className="w-full max-h-screen p-3 md:p-5 rounded-md border-2 border-slate-800   overflow-y-auto overflow-x-hidden">
             <DevCard />
             <br />
             {Gen ? (
@@ -658,7 +658,7 @@ export default function Home() {
 
             </div>
             {genClick ? (
-              <div className="border-2 overflow-x-hidden flex-wrap h-screen overflow-y-auto border-slate-700 p-2 ">
+              <div className="border-2 overflow-x-hidden flex-wrap h-screen overflow-y-auto border-slate-800 rounded-md px-1 ">
                 <Implementation />
                 <Generate
                   theme={theme}
