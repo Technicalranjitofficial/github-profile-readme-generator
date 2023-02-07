@@ -360,7 +360,7 @@ export default function Home() {
                     </aside>
                   </div>
                 ) : (
-                  <div className="h-screen md:overflow-x-hidden overflow-y-auto">
+                  <div className="h-screen mr-2 md:overflow-x-hidden overflow-y-auto">
                     <Title label="Name" title={title} setTitle={setTitle} />
                     <Title
                       title={subTitle}
@@ -464,18 +464,117 @@ export default function Home() {
                       </h1>
                       <AddOns onCheckAddons={onCheckAddons} addOns={addOns} />
                     </div>
+                    <div className=" md:hidden">
+  
+  {onGenerating && !Gen ? (
+           // <button
+           //   className="my-5 text-slate-300 bg-teal-600 py-3 px-5"
+           //   onClick={handleOnGenerate}
+           // >
+
+         
+           // </button>
+           <div className="w-full hidden md:flex  justify-center items-center h-20">
+             {/* <Image
+               className="animate-spin"
+               src="/loading.png"
+               alt="loading.."
+               width={40}
+               height={40}
+             /> */}
+             <VscLoading className="text-white animate-spin" size={40} 
+               height={40}/>
+           </div>
+         ) : !onGenerating && !Gen ? (
+           <div className="w-full justify-center flex-col flex">
+             <div>
+               <p className=""> <span className="text-yellow-300 font-bold font-Alegreya ">NOTE</span> : <span className="text-slate-300 text-xs font-Alegreya font-bold">[Customizable] (ViewMode) Click on the item to Customize the item.</span> </p>
+             </div>
+             <br />
+             <button
+               className="my-5 text-slate-300 rounded-md font-bold font-Alegreya hover:bg-teal-700 bg-teal-800 py-3 px-5"
+               onClick={handleOnGenerate}
+             >
+               GENERATE README
+             </button>
+           </div>
+         ) : (
+           <div className="w-full flex flex-row justify-between rounded-t-md items-center bg-slate-700">
+             <span className="ml-2 font-Alegreya  font-bold text-slate-400">
+               Read Implementations
+             </span>
+             <div className="  items-center justify-end mr-3 flex flex-row gap-2 ">
+               {/* <button
+                 className="py-3"
+                 onClick={() => {
+                   setGen(false);
+                   setOnGenerating(false);
+                   setGenClick(false);
+                 }}
+               > */}
+                 <p onClick={()=>{
+                   setGen(false);
+                   setOnGenerating(false);
+                   setGenClick(false);
+                 }}
+                   className={`border-2 hover:border-slate-500 cursor-pointer border-slate-600 
+                   } p-2 w-10 h-10 flex flex-row justify-center items-center rounded-md`}
+                 >
+                   <MdOutlineArrowBackIos className="w-7 h-7 text-slate-400  " />
+                 </p>
+
+               {/* </button> */}
+               <p onClick={()=>{
+                 handleCopyToClipboard();
+                 setCopy(true);
+                 setTimeout(() => {
+                   setCopy(false);
+                 }, 2000);
+               }}
+                   className={`border-2 hover:border-slate-500 cursor-pointer border-slate-600 ${
+                     copy && "text-green-500"
+                   } p-2 w-10 h-10 flex flex-col items-center rounded-md`}
+                 >
+                  {copy?<FiCheck   />: <BiCopy className="w-7 h-7 text-slate-400  " />}
+                 </p>
+               <button className="py-3">
+               <p onClick={()=>{
+                 handleDownloadMarkdown();
+                 setDownload(true);
+                 setTimeout(() => {
+                   setDownload(false);
+                 }, 2000);
+               }}
+                   className={`border-2 hover:border-slate-500 cursor-pointer border-slate-600 ${download && "text-green-500"
+                   } p-2 w-10 h-10 flex flex-col items-center rounded-md`}
+                 >
+                  {download?<FiCheck   />: <SlCloudDownload  className="w-7 h-7 text-slate-400   " />}
+                 </p>
+               </button>
+             </div>
+           </div>
+         )}
+
+         </div>
                   </div>
                 )}
+
+
+                
               </div>
+              
             )}
-            {onGenerating && !Gen ? (
+<div className="hidden md:flex">
+  
+     {onGenerating && !Gen ? (
               // <button
               //   className="my-5 text-slate-300 bg-teal-600 py-3 px-5"
               //   onClick={handleOnGenerate}
               // >
 
+            
               // </button>
-              <div className="w-full flex justify-center items-center h-20">
+              <div className="w-full hidden md:flex  justify-center items-center h-20">
                 {/* <Image
                   className="animate-spin"
                   src="/loading.png"
@@ -555,6 +654,8 @@ export default function Home() {
                 </div>
               </div>
             )}
+
+            </div>
             {genClick ? (
               <div className="border-2 overflow-x-hidden flex-wrap h-screen overflow-y-auto border-slate-700 p-2 ">
                 <Implementation />
