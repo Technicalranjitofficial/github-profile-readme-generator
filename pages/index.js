@@ -360,7 +360,8 @@ export default function Home() {
                     </aside>
                   </div>
                 ) : (
-                  <div className="h-screen mr-2 md:overflow-x-hidden overflow-y-auto">
+                  <div className="h-screen px-3  md:overflow-x-hidden overflow-y-auto">
+                    
                     <Title label="Name" title={title} setTitle={setTitle} />
                     <Title
                       title={subTitle}
