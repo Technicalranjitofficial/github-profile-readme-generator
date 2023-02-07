@@ -3,3 +3,30 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@900&family=Lato:wght@900&family=Montserrat:wght@900&family=Open+Sans&family=Roboto:wght@400;900&display=swap');
+
+ /* width */
+
+
+::-webkit-scrollbar {
+  width: 1px;
+  
+}
+
+
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px gray;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(9, 185, 185);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
