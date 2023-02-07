@@ -385,7 +385,7 @@ export default function Home() {
                       })}
                       <button
                         onClick={handleOnAddMore}
-                        className="text-slate-400 bg-teal-900 py-2 px-3 mt-3 w-full font-Alegreya font-semibold hover:bg-teal-800 "
+                        className="text-slate-400 rounded-md bg-teal-900 py-2 px-3 mt-3 w-full font-Alegreya font-semibold hover:bg-teal-800 "
                       >
                         Add more
                       </button>

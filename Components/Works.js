@@ -19,7 +19,7 @@ const Works = ({index,handleOnRemove, onChange,val}) => {
         <input onChange={(e)=>onChange(e,index)} value={val.pLink} name="pLink" className="bg-slate-900 border-2 text-slate-400 text-sm font-OpenSans  rounded-md  outline-none border-slate-800 py-2  px-2" type="text" />
       </div>
       </div>
-      <button onClick={(i)=>handleOnRemove(i)} className=" bg-red-900 py-2 mt-3 hover:bg-red-800 text-slate-400 font-bold font-Alegreya ">Delete</button>
+      <button onClick={(i)=>handleOnRemove(i)} className=" bg-red-900 rounded-md py-2 mt-3 hover:bg-red-800 text-slate-400 font-bold font-Alegreya ">Delete</button>
     </div>
   );
 };
