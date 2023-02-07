@@ -213,7 +213,7 @@ export default function Home() {
       setMsg({message:"Generated Sucessfully!!",success:true})
       setTimeout(()=>{
         setMsg({message:"",success:null});
-      },3000)
+      },2000)
     }, 3000);
   };
 
@@ -475,7 +475,7 @@ export default function Home() {
 
          
            // </button>
-           <div className="w-full hidden md:flex  justify-center items-center h-20">
+           <div className="w-full  md:flex  flex  justify-center items-center h-20">
              {/* <Image
                className="animate-spin"
                src="/loading.png"
@@ -575,7 +575,7 @@ export default function Home() {
 
             
               // </button>
-              <div className="w-full hidden md:flex  justify-center items-center h-20">
+              <div className="w-full   md:flex  justify-center items-center h-20">
                 {/* <Image
                   className="animate-spin"
                   src="/loading.png"
