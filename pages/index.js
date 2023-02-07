@@ -483,13 +483,13 @@ export default function Home() {
                width={40}
                height={40}
              /> */}
-             <VscLoading className="text-white animate-spin" size={40} 
+             <VscLoading className="md:hidden mt-3 text-white animate-spin" size={40} 
                height={40}/>
            </div>
          ) : !onGenerating && !Gen ? (
-           <div className="w-full justify-center flex-col flex">
+           <div className="w-full  justify-center flex-col flex">
              <div>
-               <p className=""> <span className="text-yellow-300 font-bold font-Alegreya ">NOTE</span> : <span className="text-slate-300 text-xs font-Alegreya font-bold">[Customizable] (ViewMode) Click on the item to Customize the item.</span> </p>
+               <p className=""> <span className="text-yellow-300  font-bold font-Alegreya ">NOTE</span> : <span className="text-slate-300 text-xs font-Alegreya font-bold">[Customizable] (ViewMode) Click on the item to Customize the item.</span> </p>
              </div>
              <br />
              <button
@@ -565,7 +565,7 @@ export default function Home() {
               </div>
               
             )}
-<div className="hidden md:flex">
+<div className=" md:flex">
   
      {onGenerating && !Gen ? (
               // <button
@@ -575,7 +575,7 @@ export default function Home() {
 
             
               // </button>
-              <div className="w-full   md:flex  justify-center items-center h-20">
+              <div className="w-full hidden   md:flex  justify-center items-center h-20">
                 {/* <Image
                   className="animate-spin"
                   src="/loading.png"
@@ -583,17 +583,17 @@ export default function Home() {
                   width={40}
                   height={40}
                 /> */}
-                <VscLoading className="text-white animate-spin" size={40} 
+                <VscLoading className=" hidden md:flex text-white animate-spin" size={40} 
                   height={40}/>
               </div>
             ) : !onGenerating && !Gen ? (
               <div className="w-full justify-center flex-col flex">
-                <div>
+                <div className="hidden md:flex">
                   <p className=""> <span className="text-yellow-300 font-bold font-Alegreya ">NOTE</span> : <span className="text-slate-300 text-xs font-Alegreya font-bold">[Customizable] (ViewMode) Click on the item to Customize the item.</span> </p>
                 </div>
                 <br />
                 <button
-                  className="my-5 text-slate-300 rounded-md font-bold font-Alegreya hover:bg-teal-700 bg-teal-800 py-3 px-5"
+                  className="my-5 hidden md:flex text-center justify-center text-slate-300 rounded-md font-bold font-Alegreya hover:bg-teal-700 bg-teal-800 py-3 px-5"
                   onClick={handleOnGenerate}
                 >
                   GENERATE README
