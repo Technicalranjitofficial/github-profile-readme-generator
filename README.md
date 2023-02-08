@@ -4,11 +4,6 @@
 
 
 
-<p align="center">
-  <a href="https://rahuldkjain.github.io/gh-profile-readme-generator">
-    <img alt="GitHub Profile Readme Generator" src="./src/images/mdg.png" width="60" />
-  </a>
-</p>
 <h1 align="center">
   
 
@@ -16,19 +11,17 @@
 </h1>
 
 <p align="center">
-<a href="https://github.com/rahuldkjain/github-profile-readme-generator/blob/master/LICENSE" target="blank">
-<img src="https://img.shields.io/github/license/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator license" />
-</a>
-<a href="https://github.com/rahuldkjain/github-profile-readme-generator/fork" target="blank">
+
+<a href="https://github.com/technicalranjitofficial/github-profile-readme-generator/fork" target="blank">
 <img src="https://img.shields.io/github/forks/technicalranjitofficial/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator forks"/>
 </a>
-<a href="https://github.com/rahuldkjain/github-profile-readme-generator/stargazers" target="blank">
+<a href="https://github.com/technicalranjitofficial/github-profile-readme-generator/stargazers" target="blank">
 <img src="https://img.shields.io/github/stars/technicalranjitofficial/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator stars"/>
 </a>
-<a href="https://github.com/rahuldkjain/github-profile-readme-generator/issues" target="blank">
+<a href="https://github.com/technicalranjitofficial/github-profile-readme-generator/issues" target="blank">
 <img src="https://img.shields.io/github/issues/technicalranjitofficial/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator issues"/>
 </a>
-<a href="https://github.com/rahuldkjain/github-profile-readme-generator/pulls" target="blank">
+<a href="https://github.com/technicalranjitofficial/github-profile-readme-generator/pulls" target="blank">
 <img src="https://img.shields.io/github/issues-pr/technicalranjitofficial/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator pull-requests"/>
  
 
@@ -39,7 +32,7 @@
 <p align="center"><img src="./src/images/github-profile-readme-generator.gif" alt="github-profile-readme-generator gif" /></p>
 
 <p align="center">
-    <a https://technicalranjitofficial.github.io/github-profile-readme-generator/" target="blank">View Demo</a>
+    <a href="https://technicalranjitofficial.github.io/github-profile-readme-generator/" target="blank">View Demo</a>
     ·
     <a href="https://github.com/technicalranjitofficial/github-profile-readme-generator/issues/new/choose">Report Bug</a>
     ·
