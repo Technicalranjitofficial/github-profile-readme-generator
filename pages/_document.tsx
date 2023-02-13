@@ -22,7 +22,7 @@ export default function Document() {
         </Script>
 
         <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9835038903847401"
-          crossorigin="anonymous"></Script>
+          crossOrigin="anonymous"></Script>
 
 
       </Head>
